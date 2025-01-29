@@ -35,7 +35,7 @@ void moveAndRotateSprite(sf::Sprite& sprite,int orentation, float move)
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode({640, 480}), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode({640, 480}), "Homework 1");
     sf::Texture texture;
     
     if (!texture.loadFromFile("boid-sm.png")) // Ensure the texture loads properly
@@ -102,12 +102,12 @@ int main()
         else{ // sprite 4
             if(sprites.size() > 0){
                 sprites.erase(sprites.begin()) ;
-            }
-            else{
                 sf::Sprite newSprite(texture);
+                newSprite.setPosition({0.0f,0.0f});
                 sprites.push_back(newSprite);
                 elapsedTime = sf::seconds(0);
             }
+          
         }
        
         
