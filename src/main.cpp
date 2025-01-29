@@ -1,3 +1,4 @@
+// Tristan Hall CSC 584
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include <iostream>
